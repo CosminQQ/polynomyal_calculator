@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="504.0" style="-fx-background-color: #6a4c93;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.tuc.polynomial_calculator.controller.AppInterfaceController">
+   <top>
+      <AnchorPane prefHeight="68.0" prefWidth="500.0" style="-fx-background-color: #8ac926;" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="16.0" prefHeight="68.0" prefWidth="489.0" text="POLYNOMIAL CALCULATOR" textAlignment="CENTER">
+               <font>
+                  <Font name="JetBrains Mono SemiBold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="482.0" prefWidth="583.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="PolynomOneInsertBox" alignment="CENTER" layoutX="154.0" layoutY="47.0" prefHeight="41.0" prefWidth="332.0" promptText="Insert polynom" style="-fx-background-color: white; -fx-border-width: 3px; -fx-border-color: #1982c4;">
+               <font>
+                  <Font name="JetBrains Mono Medium" size="14.0" />
+               </font>
+            </TextField>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="49.0" prefHeight="37.0" prefWidth="128.0" style="-fx-background-color: white; -fx-border-width: 3px; -fx-border-color: #1982c4;" text="Polynom_1:" textAlignment="CENTER">
+               <font>
+                  <Font name="JetBrains Mono Medium" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="118.0" prefHeight="37.0" prefWidth="128.0" style="-fx-background-color: white; -fx-border-width: 3px; -fx-border-color: #1982c4;" text="Polynom_2:" textAlignment="CENTER">
+               <font>
+                  <Font name="JetBrains Mono Medium" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="PolynomTwoInsertBox" alignment="CENTER" layoutX="154.0" layoutY="116.0" prefHeight="41.0" prefWidth="332.0" promptText="Insert polynom" style="-fx-background-color: white; -fx-border-width: 3px; -fx-border-color: #1982c4;">
+               <font>
+                  <Font name="JetBrains Mono Medium" size="14.0" />
+               </font>
+            </TextField>
+            <Label fx:id="AnswerErrorLabel" alignment="CENTER" layoutX="15.0" layoutY="192.0" prefHeight="90.0" prefWidth="472.0" style="-fx-background-color: white; -fx-border-width: 3px; -fx-border-color: #1982c4;" text="Answer" textAlignment="CENTER">
+               <font>
+                  <Font name="JetBrains Mono Medium" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="AddButton" alignment="CENTER" layoutX="15.0" layoutY="309.0" mnemonicParsing="false" onAction="#addButtonOnAction" prefHeight="58.0" prefWidth="143.0" style="-fx-background-color: #8ac926; -fx-border-width: 3px; -fx-border-color: #1982c4;" text="ADD" textAlignment="CENTER">
+               <font>
+                  <Font name="JetBrains Mono ExtraBold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="subButton" alignment="CENTER" layoutX="15.0" layoutY="394.0" mnemonicParsing="false" onAction="#subButtonOnAction" prefHeight="58.0" prefWidth="143.0" style="-fx-background-color: #8ac926; -fx-border-width: 3px; -fx-border-color: #1982c4;" text="SUBSTRACT" textAlignment="CENTER">
+               <font>
+                  <Font name="JetBrains Mono ExtraBold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="MultiplyButton" alignment="CENTER" layoutX="179.0" layoutY="309.0" mnemonicParsing="false" onAction="#multiplyButtonOnAction" prefHeight="58.0" prefWidth="143.0" style="-fx-background-color: #8ac926; -fx-border-width: 3px; -fx-border-color: #1982c4;" text="MULTIPLY" textAlignment="CENTER">
+               <font>
+                  <Font name="JetBrains Mono ExtraBold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="DivideButton" alignment="CENTER" layoutX="179.0" layoutY="394.0" mnemonicParsing="false" onAction="#divideButtonOnAction" prefHeight="58.0" prefWidth="143.0" style="-fx-background-color: #8ac926; -fx-border-width: 3px; -fx-border-color: #1982c4;" text="DIVIDE" textAlignment="CENTER">
+               <font>
+                  <Font name="JetBrains Mono ExtraBold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="DerivateButton" alignment="CENTER" layoutX="342.0" layoutY="309.0" mnemonicParsing="false" onAction="#deriveButtonOnAction" prefHeight="58.0" prefWidth="143.0" style="-fx-background-color: #8ac926; -fx-border-width: 3px; -fx-border-color: #1982c4;" text="DERIVATE" textAlignment="CENTER">
+               <font>
+                  <Font name="JetBrains Mono ExtraBold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="IntegrateButton" alignment="CENTER" layoutX="342.0" layoutY="394.0" mnemonicParsing="false" onAction="#integrateButtonOnAction" prefHeight="58.0" prefWidth="143.0" style="-fx-background-color: #8ac926; -fx-border-width: 3px; -fx-border-color: #1982c4;" text="INTEGRATE" textAlignment="CENTER">
+               <font>
+                  <Font name="JetBrains Mono ExtraBold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
